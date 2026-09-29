@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cardea Privacy Policy</title>
+<meta name="description" content="How the Cardea app handles your data: it doesn't collect any.">
+<link rel="icon" href="../icon.png">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+<header>
+  <img src="../icon.png" alt="">
+  <div>
+    <h1>Cardea Privacy Policy</h1>
+    <p>Effective 29 September 2026</p>
+  </div>
+</header>
+
+<p>Cardea is an iPhone app for opening Bluetooth lock boxes and sharing them with people you choose. It is made by Eino Tuominen, an individual developer in Finland (“I”, “me”).</p>
+
+<p class="summary"><strong>In short: I don’t collect any data about you.</strong> Cardea has no servers of its own, no accounts, no analytics, no advertising and no tracking. What the app stores stays on your iPhone and, end-to-end encrypted, in iCloud, where only you and the people you share a lock with can read it.</p>
+
+<h2>What Cardea stores, and where</h2>
+
+<h3>On your iPhone</h3>
+<ul>
+  <li>Your locks: their names and the keys that open them.</li>
+  <li>Each lock’s activity log.</li>
+  <li>The name you enter so the people you share with know who you are.</li>
+  <li>Your phone’s own encryption and signing keys. They are created in the iPhone’s Secure Enclave and never leave it.</li>
+</ul>
+<p>These are encrypted with a key that never leaves your iPhone, in addition to iOS Data Protection.</p>
+
+<h3>In iCloud</h3>
+<p>If you are signed in to iCloud, Cardea keeps each lock you own in your private iCloud database, using Apple’s CloudKit. For each lock this includes:</p>
+<ul>
+  <li>the lock’s name and key;</li>
+  <li>the people who have it: their names, user IDs and public keys;</li>
+  <li>the activity log: what happened, when, by whom, and where (if you allowed location);</li>
+  <li>requests to open the lock, approvals, and settings such as the time lock.</li>
+</ul>
+<p>All of it is <strong>end-to-end encrypted on your iPhone before it is uploaded</strong>. Neither Apple nor I can read it.</p>
+<p>When you share a lock, the people you add can read that lock’s data and add to it. It stays in the owner’s iCloud and uses a small amount of the owner’s iCloud storage.</p>
+<p>When someone is removed from a shared lock, the lock gets new keys. The new key for each remaining person is left in the app’s public iCloud database, encrypted so that only that person’s iPhone can open it. It is filed under a random-looking name that doesn’t identify anyone.</p>
+<p>Apple can see technical information about this storage: the kinds and sizes of records, when they change, and which iCloud accounts take part. Apple’s handling of iCloud is covered by <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>.</p>
+
+<h3>Location</h3>
+<p>Cardea asks for your location only while you are using the app, and only if you allow it. It uses your location to:</p>
+<ul>
+  <li>record where a lock was opened or locked in the lock’s activity log;</li>
+  <li>show, on a request to open a lock, where the request was made;</li>
+  <li>remember where the lock is, so approvers can see it on a map.</li>
+</ul>
+<p>Your location is visible only to the people who share that lock, and is never sent to me. If you don’t allow location, Cardea works the same, just without places.</p>
+<p>The map shown when reviewing a request uses Apple Maps, which provides the map images.</p>
+
+<h3>Bluetooth and local network</h3>
+<p>Cardea uses Bluetooth to talk directly to your lock box. Opening and locking never use the internet.</p>
+<p>When you add someone by holding two phones together, the phones connect directly to each other, encrypted, over Bluetooth or Wi-Fi.</p>
+
+<h3>Notifications</h3>
+<p>Cardea shows notifications on your iPhone, for example when someone asks to open a lock. iCloud uses Apple’s push notification service to tell the app that something has changed. The notification text is created on your iPhone from the encrypted data.</p>
+
+<h2>What I don’t do</h2>
+<ul>
+  <li>I don’t collect, receive or store your personal data.</li>
+  <li>There are no analytics, advertising or tracking tools in the app, and no third-party code that sends data anywhere.</li>
+  <li>I don’t sell or share data, because I don’t have any.</li>
+</ul>
+<p>If you have chosen in iOS Settings to share analytics with app developers, Apple may pass me anonymous crash reports. They don’t identify you.</p>
+
+<h2>Your choices</h2>
+<ul>
+  <li><strong>Remove a lock</strong> in the app: it is deleted from your iPhone. If you own the lock, its iCloud data is deleted too. If it was shared with you, you leave it.</li>
+  <li><strong>Remove people</strong> from a lock you share, or stop sharing it altogether.</li>
+  <li><strong>Location, Bluetooth and notifications</strong> can be turned off at any time in iOS Settings → Cardea.</li>
+  <li><strong>Deleting the app</strong> removes it and its files from your iPhone.</li>
+</ul>
+
+<h2>Children</h2>
+<p>Cardea is not directed at children under 13, and it collects no data from anyone.</p>
+
+<h2>Your rights</h2>
+<p>Because I don’t collect or hold personal data about you, there is nothing I can show, correct or delete for you: your data is under your control, on your devices and in your iCloud. You can still contact me with any questions. If you are in the EU, you can also contact your data protection authority; in Finland, that is the Data Protection Ombudsman (<a href="https://tietosuoja.fi/en">tietosuoja.fi</a>).</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new version will be published here with a new effective date.</p>
+
+<h2>Contact</h2>
+<p><a href="mailto:eino@mac.com">eino@mac.com</a></p>
+
+<footer><a href="../">Cardea</a></footer>
+</main>
+</body>
+</html>
