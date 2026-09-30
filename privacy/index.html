@@ -38,7 +38,7 @@
 <ul>
   <li>the lock’s name and key;</li>
   <li>the people who have it: their names, user IDs and public keys;</li>
-  <li>the activity log: what happened, when, by whom, and where (if you allowed location);</li>
+  <li>the activity log: what happened, when, and by whom (and, for guests on a lock that uses guests’ location, where);</li>
   <li>requests to open the lock, approvals, and settings such as the time lock.</li>
 </ul>
 <p>All of it is <strong>end-to-end encrypted on your iPhone before it is uploaded</strong>. Neither Apple nor I can read it.</p>
@@ -47,13 +47,13 @@
 <p>Apple can see technical information about this storage: the kinds and sizes of records, when they change, and which iCloud accounts take part. Apple’s handling of iCloud is covered by <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>.</p>
 
 <h3>Location</h3>
-<p>Cardea asks for your location only while you are using the app, and only if you allow it. It uses your location to:</p>
+<p>Cardea never asks for your location unless you turn on <em>Use location</em> in its Settings → Privacy (off by default). Even then it uses location only for <strong>guests</strong>, and only on locks whose authoritative owners turned on <em>Require location</em> (off by default). A guest is told before joining such a lock, and needs <em>Use location</em> on to join. Authoritative owners’ and other members’ locations are never recorded.</p>
+<p>On such a lock, if the guest allows location while using the app, Cardea:</p>
 <ul>
-  <li>record where a lock was opened or locked in the lock’s activity log;</li>
-  <li>show, on a request to open a lock, where the request was made;</li>
-  <li>remember where the lock is, so approvers can see it on a map.</li>
+  <li>records where the guest was when they asked to open or opened the lock, in the lock’s activity log;</li>
+  <li>checks, on the guest’s own iPhone, whether they’re at the place an approval is limited to, before showing their code (this check isn’t recorded).</li>
 </ul>
-<p>Your location is visible only to the people who share that lock, and is never sent to me. If you don’t allow location, Cardea works the same, just without places.</p>
+<p>The lock’s own place, for approvers’ maps, is set by hand in the lock’s settings. Recorded locations are visible only to the people who share that lock, and are never sent to me.</p>
 <p>The map shown when reviewing a request uses Apple Maps, which provides the map images. If you turn on <em>Show place names</em> in Cardea’s Settings (off by default), the places in the activity are looked up with Apple Maps to show street names, so those places are sent to Apple.</p>
 
 <h3>Bluetooth and local network</h3>
