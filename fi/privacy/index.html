@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cardean tietosuojakäytäntö</title>
+<meta name="description" content="Miten Cardea-sovellus käsittelee tietojasi: se ei kerää niitä.">
+<link rel="icon" href="../../icon.png">
+<link rel="stylesheet" href="../../style.css">
+<link rel="alternate" hreflang="en" href="https://einot.github.io/cardea/privacy/">
+<link rel="alternate" hreflang="fi" href="https://einot.github.io/cardea/fi/privacy/">
+</head>
+<body>
+<main>
+<header>
+  <img src="../../icon.png" alt="">
+  <div>
+    <h1>Cardean tietosuojakäytäntö</h1>
+    <p>Voimassa 29.9.2026 alkaen · <a href="../../privacy/" hreflang="en" lang="en">In English</a></p>
+  </div>
+</header>
+
+<p>Cardea on iPhone-sovellus Bluetooth-avainsäilöjen avaamiseen ja jakamiseen valitsemiesi ihmisten kanssa. Sen on tehnyt Eino Tuominen, yksityinen kehittäjä Suomesta (”minä”).</p>
+
+<p class="summary"><strong>Lyhyesti: en kerää sinusta mitään tietoja.</strong> Cardealla ei ole omia palvelimia, käyttäjätilejä, analytiikkaa, mainontaa eikä seurantaa. Sovelluksen tallentamat tiedot pysyvät iPhonessasi ja päästä päähän salattuina iCloudissa, jossa vain sinä ja ne, joiden kanssa jaat lukon, voivat lukea niitä.</p>
+
+<h2>Mitä Cardea tallentaa ja minne</h2>
+
+<h3>iPhonessasi</h3>
+<ul>
+  <li>Lukkosi: niiden nimet ja avaimet, joilla ne avataan.</li>
+  <li>Kunkin lukon tapahtumaloki.</li>
+  <li>Nimi, jonka annat, jotta ne, joiden kanssa jaat lukon, tietävät kuka olet.</li>
+  <li>Puhelimesi omat salaus- ja allekirjoitusavaimet. Ne luodaan iPhonen Secure Enclavessa, eivätkä ne koskaan poistu sieltä.</li>
+</ul>
+<p>Nämä salataan iOS:n tietosuojauksen lisäksi avaimella, joka ei koskaan poistu iPhonestasi.</p>
+
+<h3>iCloudissa</h3>
+<p>Jos olet kirjautunut iCloudiin, Cardea säilyttää jokaisen omistamasi lukon yksityisessä iCloud-tietokannassasi Applen CloudKitin avulla. Kustakin lukosta tallennetaan:</p>
+<ul>
+  <li>lukon nimi ja avain;</li>
+  <li>lukon käyttäjät: heidän nimensä, käyttäjätunnuksensa ja julkiset avaimensa;</li>
+  <li>tapahtumaloki: mitä tapahtui, milloin ja kuka sen teki (ja vieraista lukossa, joka käyttää vieraiden sijaintia, myös missä);</li>
+  <li>avauspyynnöt, hyväksynnät ja asetukset, kuten aikalukko.</li>
+</ul>
+<p>Kaikki tämä <strong>salataan päästä päähän iPhonessasi ennen lähettämistä</strong>. Applekaan tai minä emme voi lukea sitä.</p>
+<p>Kun jaat lukon, lisäämäsi ihmiset voivat lukea lukon tietoja ja lisätä niihin. Tiedot pysyvät omistajan iCloudissa ja vievät vähän omistajan iCloud-tallennustilaa.</p>
+<p>Kun joku poistetaan jaetusta lukosta, lukko saa uudet avaimet. Kunkin jäljelle jäävän henkilön uusi avain jätetään sovelluksen julkiseen iCloud-tietokantaan salattuna niin, että vain kyseisen henkilön iPhone voi avata sen. Se tallennetaan satunnaiselta näyttävällä nimellä, josta ketään ei voi tunnistaa.</p>
+<p>Apple näkee tästä tallennuksesta teknisiä tietoja: tietueiden tyypit ja koot, milloin ne muuttuvat ja mitkä iCloud-tilit ovat mukana. Applen iCloudin käsittelyä koskee <a href="https://www.apple.com/fi/legal/privacy/">Applen tietosuojakäytäntö</a>.</p>
+
+<h3>Sijainti</h3>
+<p>Cardea ei koskaan kysy sijaintiasi, ellet laita päälle asetusta <em>Käytä sijaintia</em> sen kohdassa Asetukset → Tietosuoja (oletuksena pois). Silloinkin se käyttää sijaintia vain <strong>vieraille</strong> ja vain lukoissa, joiden pääomistajat ovat laittaneet päälle asetuksen <em>Vaadi sijainti</em> (oletuksena pois). Vieraalle kerrotaan tästä ennen kuin hän liittyy tällaiseen lukkoon, ja liittyminen edellyttää, että <em>Käytä sijaintia</em> on päällä. Pääomistajien ja muiden jäsenten sijaintia ei koskaan tallenneta.</p>
+<p>Tällaisessa lukossa, jos vieras sallii sijainnin käytön sovellusta käytettäessä, Cardea:</p>
+<ul>
+  <li>tallentaa lukon tapahtumalokiin, missä vieras oli, kun hän pyysi lupaa avata lukon tai avasi sen;</li>
+  <li>tarkistaa vieraan omassa iPhonessa, onko hän paikassa, johon hyväksyntä on rajattu, ennen kuin näyttää hänen koodinsa (tätä tarkistusta ei tallenneta).</li>
+</ul>
+<p>Lukon oma paikka hyväksyjien karttoja varten asetetaan käsin lukon asetuksissa. Tallennetut sijainnit näkyvät vain niille, jotka jakavat kyseisen lukon, eikä niitä koskaan lähetetä minulle.</p>
+<p>Pyyntöä tarkasteltaessa näkyvä kartta käyttää Apple Mapsia, joka toimittaa karttakuvat. Jos laitat päälle asetuksen <em>Näytä paikkojen nimet</em> Cardean asetuksissa (oletuksena pois), tapahtumien paikat haetaan Apple Mapsista katujen nimien näyttämiseksi, joten nämä paikat lähetetään Applelle.</p>
+
+<h3>Bluetooth ja paikallisverkko</h3>
+<p>Cardea käyttää Bluetoothia keskustellakseen suoraan avainsäilösi kanssa. Avaaminen ja lukitseminen eivät koskaan käytä internetiä.</p>
+<p>Kun lisäät jonkun pitämällä puhelimia vierekkäin, puhelimet yhdistävät suoraan toisiinsa Bluetoothin tai Wi-Fin kautta, ja se, mitä ne lähettävät toisilleen lukosta, on salattu päästä päähän.</p>
+
+<h3>Ilmoitukset</h3>
+<p>Cardea näyttää ilmoituksia iPhonessasi, esimerkiksi kun joku pyytää lupaa avata lukon. iCloud käyttää Applen push-ilmoituspalvelua kertoakseen sovellukselle, että jokin on muuttunut. Ilmoituksen teksti luodaan iPhonessasi salatuista tiedoista.</p>
+
+<h2>Mitä en tee</h2>
+<ul>
+  <li>En kerää, vastaanota enkä tallenna henkilötietojasi.</li>
+  <li>Sovelluksessa ei ole analytiikka-, mainonta- tai seurantatyökaluja eikä kolmansien osapuolten koodia, joka lähettäisi tietoja minnekään.</li>
+  <li>En myy enkä jaa tietoja, koska minulla ei ole niitä.</li>
+</ul>
+<p>Jos olet iOS:n asetuksissa valinnut jakaa analytiikkatietoja sovelluskehittäjille, Apple voi välittää minulle nimettömiä kaatumisraportteja. Niistä ei voi tunnistaa sinua.</p>
+
+<h2>Valintasi</h2>
+<ul>
+  <li><strong>Poista lukko</strong> sovelluksessa: se poistetaan iPhonestasi. Jos omistat lukon, myös sen iCloud-tiedot poistetaan. Jos lukko on jaettu sinulle, poistut siitä.</li>
+  <li><strong>Poista ihmisiä</strong> jakamastasi lukosta tai lopeta jakaminen kokonaan.</li>
+  <li><strong>Sijainnin, Bluetoothin ja ilmoitukset</strong> voi laittaa pois milloin tahansa kohdassa iOS:n Asetukset → Cardea.</li>
+  <li><strong>Poista kaikki tiedot</strong> Cardean asetuksissa poistaa kaiken, mitä sovellus säilyttää iPhonessasi: sen avaimet, lukot, tapahtumalokit ja asetukset. Voit halutessasi poistaa myös tietosi iCloudista: omistamasi lukot poistetaan silloin kaikilta, joiden kanssa jaat ne, ja poistut lukoista, joita muut jakavat kanssasi.</li>
+  <li><strong>Sovelluksen poistaminen</strong> Koti-valikosta poistaa sen tiedostot, mutta iOS säilyttää sen avaimet iPhonen avainnipussa ja sen tiedot jäävät iCloudiin, joten uudelleen asennettu Cardea saa lukkosi takaisin. Jos et halua mitään jäävän, käytä ensin toimintoa <em>Poista kaikki tiedot</em>.</li>
+</ul>
+
+<h2>Lapset</h2>
+<p>Cardeaa ei ole suunnattu alle 13-vuotiaille lapsille, eikä se kerää tietoja keneltäkään.</p>
+
+<h2>Oikeutesi</h2>
+<p>Koska en kerää enkä säilytä sinusta henkilötietoja, minulla ei ole mitään, mitä voisin näyttää, korjata tai poistaa puolestasi: tietosi ovat hallinnassasi, laitteillasi ja iCloudissasi. Voit silti ottaa minuun yhteyttä kysymyksissä. EU:ssa voit myös ottaa yhteyttä tietosuojaviranomaiseen; Suomessa se on tietosuojavaltuutetun toimisto (<a href="https://tietosuoja.fi">tietosuoja.fi</a>).</p>
+
+<h2>Muutokset</h2>
+<p>Jos tämä käytäntö muuttuu, uusi versio julkaistaan täällä uudella voimaantulopäivällä.</p>
+
+<h2>Yhteystiedot</h2>
+<p><a href="mailto:eino@mac.com">eino@mac.com</a></p>
+
+<footer><a href="../../">Cardea</a></footer>
+</main>
+</body>
+</html>
